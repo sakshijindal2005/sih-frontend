@@ -7,6 +7,7 @@ import VirtualDrills from './components/VirtualDrills';
 import EmergencyContacts from './components/EmergencyContacts';
 import AdminDashboard from './components/AdminDashboard';
 import Footer from './components/Footer';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [isAdminView, setIsAdminView] = useState(false);
@@ -16,9 +17,7 @@ function App() {
       {/* Background Effects */}
       <div className="fixed inset-0 bg-gradient-to-br from-blue-400/10 via-purple-400/10 to-pink-400/10 pointer-events-none" />
       <div className="fixed inset-0 bg-grid-pattern opacity-5 pointer-events-none" />
-      
       <Header isAdminView={isAdminView} setIsAdminView={setIsAdminView} />
-      
       {isAdminView ? (
         <AdminDashboard />
       ) : (
@@ -30,8 +29,8 @@ function App() {
           <EmergencyContacts />
         </>
       )}
-      
       <Footer />
+      <Chatbot />
     </div>
   );
 }

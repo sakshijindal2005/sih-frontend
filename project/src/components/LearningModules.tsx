@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mountain, Droplets, Flame, Wind, Clock, Star } from 'lucide-react';
+import griffenImage from '../assets/images/griffen.png';
 
 export default function LearningModules() {
   const modules = [
@@ -149,7 +150,7 @@ export default function LearningModules() {
             
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/8923080/pexels-photo-8923080.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src={griffenImage}
                 alt="Interactive learning experience"
                 className="w-full h-64 object-cover rounded-2xl shadow-lg"
               />

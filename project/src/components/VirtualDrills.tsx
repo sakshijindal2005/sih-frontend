@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Play, Users, MapPin, Timer, Award, Zap } from 'lucide-react';
-
+import earthquakeImage from '../assets/images/earthquake.jpeg'
+import fireImage from '../assets/images/fire.jpeg'
+import floodImage from '../assets/images/flood.jpeg'
 export default function VirtualDrills() {
   const [selectedDrill, setSelectedDrill] = useState(0);
 
@@ -13,7 +15,7 @@ export default function VirtualDrills() {
       difficulty: 'Intermediate',
       location: 'Multi-story School Building',
       description: 'Practice proper drop, cover, and hold techniques followed by orderly evacuation to designated assembly points.',
-      image: 'https://images.pexels.com/photos/8923116/pexels-photo-8923116.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: earthquakeImage,
     },
     {
       title: 'Fire Evacuation Simulation',
@@ -23,7 +25,7 @@ export default function VirtualDrills() {
       difficulty: 'Advanced',
       location: 'Science Laboratory Complex',
       description: 'Navigate smoke-filled corridors, use alternate evacuation routes, and coordinate with emergency responders.',
-      image: 'https://images.pexels.com/photos/8363102/pexels-photo-8363102.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: fireImage
     },
     {
       title: 'Flood Emergency Response',
@@ -33,7 +35,7 @@ export default function VirtualDrills() {
       difficulty: 'Beginner',
       location: 'Ground Floor Classrooms',
       description: 'Move to higher floors, establish communication, and organize shelter-in-place procedures.',
-      image: 'https://images.pexels.com/photos/8923080/pexels-photo-8923080.jpeg?auto=compress&cs=tinysrgb&w=600'
+      image: floodImage,
     }
   ];
 

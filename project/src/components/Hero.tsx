@@ -1,6 +1,6 @@
 import React from 'react';
 import { Play, BookOpen, Users, AlertTriangle } from 'lucide-react';
-
+import heroImage from '../assets/images/heroImage.jpeg';
 export default function Hero() {
   return (
     <section id="home" className="pt-24 pb-12 px-4 sm:px-6 lg:px-8">
@@ -60,10 +60,10 @@ export default function Hero() {
           <div className="relative">
             <div className="relative z-10 bg-white/40 backdrop-blur-xl rounded-3xl p-8 border border-white/50 shadow-2xl">
               <img 
-                src="https://images.pexels.com/photos/8363102/pexels-photo-8363102.jpeg?auto=compress&cs=tinysrgb&w=600" 
-                alt="Students learning disaster preparedness"
-                className="w-full h-64 object-cover rounded-2xl mb-6"
-              />
+               src={heroImage} 
+               alt="Students learning disaster preparedness"
+               className="w-full h-64 object-cover rounded-2xl mb-6"
+                    />
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center">
